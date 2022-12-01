@@ -21,9 +21,15 @@ int main()
         {1, 1, 1, 1},
         {1, 0, 1, 0},
         {1, 1, 0, 1},
-        {1, 0, 0, 1}
+        {1, 0, 0, 1},
+				{1, 0, 0, 1}
     };
-    DailySchedule sched;
+		
+		// cout << "Printing size of availablity matrix: " << avail.size()<< endl;
+		// int temp = avail[0].size();
+		// cout << "Printing size of the first row of availablity matrix: " << temp << endl;
+    
+		DailySchedule sched;
     bool solutionFound = schedule(avail, 2, 2, sched);
     if(solutionFound)
     {

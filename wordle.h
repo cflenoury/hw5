@@ -20,4 +20,17 @@ std::set<std::string> wordle(
     const std::string& floating,
     const std::set<std::string>& dict);
 
+void floatPerm(
+		const std::string& in,
+    const std::string& floating,
+    const std::set<std::string>& dict,
+		std::set<std::string>& returnSet);
+
+
+void wordFinder(
+	std::string in,
+	const std::set<std::string>& dict,
+	std::set<std::string>& returnSet
+);
+
 #endif
